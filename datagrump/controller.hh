@@ -11,7 +11,9 @@ private:
   bool debug_; /* Enables debugging output */
 
   /* Add member variables here */
-
+  int past_delay_[10];
+  unsigned int pointer_;
+  double window_size_;
 public:
   /* Public interface for the congestion controller */
   /* You can change these if you prefer, but will need to change
